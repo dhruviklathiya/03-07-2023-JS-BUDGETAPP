@@ -1,3 +1,7 @@
+:root{
+  --primary-color : #6550a9;
+  --secondary-color: #ffffff;
+}
 * {
     padding: 0;
     margin: 0;
@@ -12,6 +16,7 @@
     font-size: 16px;
     max-width: 43.75em;
     margin: 1em auto;
+    margin-top: 10vh;
   }
   .container {
     width: 100%;
@@ -48,18 +53,18 @@
     margin-bottom: 0.6em;
   }
   .container input:focus {
-    border-color: #587ef4;
+    border-color: var(--primary-color);
   }
   .total-amount-container,
   .user-amount-container {
-    background-color: #ffffff;
+    background-color: var(--secondary-color);
     padding: 1.25em 0.9em;
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
   }
   .output-container {
-    background-color: #587ef4;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 0.3em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
     margin: 2em 0;
@@ -78,10 +83,10 @@
   .submit {
     font-size: 1em;
     margin-top: 0.8em;
-    background-color: #587ef4;
+    background-color: var(--primary-color);
     border: none;
     outline: none;
-    color: #ffffff;
+    color: var(--secondary-color);
     padding: 0.6em 1.2em;
     border-radius: 0.3em;
     cursor: pointer;
@@ -89,13 +94,13 @@
     border: 1px transparent solid;
   }
   .submit:hover{
-    color: #587ef4;
-    background-color: #FFFFFF;
-    border: 1px #587ef4 solid;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 1px var(--primary-color) solid;
   }
   .sublist-content {
     width: 100%;
-    border-left: 0.3em solid #587ef4;
+    border-left: 0.3em solid var(--primary-color);
     margin-bottom: 0.6em;
     padding: 0.5em 1em;
     display: grid;
@@ -132,7 +137,7 @@
     cursor: pointer;
     margin-right: 1.5em;
     border: none;
-    color: #587ef4;
+    color: var(--primary-color);
   }
   @media screen and (max-width: 600px) {
     .wrapper {
@@ -166,7 +171,7 @@ table {
   font-weight: 400;
 }	
 th {
-  background-color: #587ef4;
+  background-color: var(--primary-color);
   border: none;
   border-radius: 0.3em;
 	color: #f6f6f6;
