@@ -85,6 +85,13 @@
     padding: 0.6em 1.2em;
     border-radius: 0.3em;
     cursor: pointer;
+    transition: all 0.5s;
+    border: 1px transparent solid;
+  }
+  .submit:hover{
+    color: #587ef4;
+    background-color: #FFFFFF;
+    border: 1px #587ef4 solid;
   }
   .sublist-content {
     width: 100%;
