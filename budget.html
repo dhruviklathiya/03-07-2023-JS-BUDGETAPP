@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUDGET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="output-container flex-space">
+      <div>
+        <p>Total Budget</p>
+        <span id="initial_input_display">0</span>
+      </div>
+      <div>
+        <p>Total Expenses</p>
+        <span id="total_expense_display">0</span>
+      </div>
+      <div>
+        <p>Total Balance</p>
+        <span id="total_balance_display">0</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sub-container">
+        <div class="total-amount-container">
+          <h3>Budget</h3>
+          <p class="hide error" id="budget-error">Value cannot be empty or negative</p>
+          <input type="number" id="initial_input" placeholder="Enter Total Amount" />
+          <button onclick="set_budget()" class="submit btn1" id="inital_input_button">Set Budget</button>
+          <button onclick="show_()" class="submit btn1">Display</button>
+          <button onclick="clear_()" class="submit btn1">Clear Budget</button>
+          <button onclick="clear_history()" class="submit btn1">Clear History</button>
+        </div>
+        <div class="user-amount-container">
+          <h3>Expenses</h3>
+          <input type="text" class="product-title" id="title_input" placeholder="Enter Title of Product" />
+          <input type="number" id="price_input" placeholder="Enter Cost of Product" />
+          <span id="message_" style="display: none;">You cannot spent more</span>
+          <button onclick="add_data()" class="submit btn3" id="check_button">Add Expense </button>
+        </div>
+      </div>
+      <div class="box">
+        <input style="margin-top: 50px;" type="number" id="update_input" placeholder="Enter new budget" />
+        <button onclick="update_budget()" class="submit btn3">UPDATE BUDGET</button>
+      </div>
+    </div>
+    <table style="display: none;" id="table_">
+      <tr>
+        <th>Name of expense</th>
+        <th>Price</th>
+      </tr>
+      <tbody id="record_show"></tbody>
+    </table>
+  </div>
+  <script src="budget.js"></script>
+</body>
+</html>
